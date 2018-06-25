@@ -75,7 +75,7 @@ $(document).ready(function () {
 
 
         //create new div, append contents, and append it to the favorites section
-        var favoritesDiv = $("<div>");
+        var favoritesDiv = $("<div class='favorites-div'>");
         favoritesDiv.append(newGIPH);
         favoritesDiv.append(newButton);
         $('#favorites-box').append(favoritesDiv);
