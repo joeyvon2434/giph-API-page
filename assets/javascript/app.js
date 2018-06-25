@@ -79,7 +79,7 @@ $(document).ready(function () {
         for (i = 0; i < dataArray.length; i++) {
 
         //Create Image for new GIF
-        var newGIPH = $('<img>');
+        var newGIPH = $('<img class="mb-1">');
         newGIPH.attr('src', dataArray[i].images.fixed_height_still.url);
         console.log(dataArray[i].images.fixed_height_still.url);
         newGIPH.attr('data-animate', dataArray[i].images.fixed_height.url);
@@ -89,13 +89,18 @@ $(document).ready(function () {
 
         //Create a paragraph to house the GIF rating
         newGIPHrating = $('<p class="gif-rating">');
-        newGIPHrating.text(dataArray[i].rating);
+        newGIPHrating.text('Rating: ' + dataArray[i].rating);
+
+        //Create a favorite button
+        var favoriteButton = $('<button class="favorite-button btn-sm btn-outline-dark">');
+        favoriteButton.text('Favorite');
 
 
         //Create box to house the new GIF and rating
         var newGIPHbox = $('<div class="div-GIPH-box">')
         newGIPHbox.append(newGIPH);
         newGIPHbox.append(newGIPHrating);
+        newGIPHbox.append(favoriteButton);
        $('#giph-box').prepend(newGIPHbox);
     };
 }; //Close loop that creates the correct number of GIFs from dataArray 

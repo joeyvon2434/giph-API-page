@@ -16,8 +16,24 @@ footer {
 }
 
 .div-GIPH-box {
+    position: relative;
     display: inline-block;
     padding: 1em;
+}
+
+.gif {
+    display: block;
+}
+
+.gif-rating {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.favorite-button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
 }
 
 
