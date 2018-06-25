@@ -14,8 +14,8 @@
 
 <body>
     <!--Wrapper to allow footer and header to stick to top-->
-    <div>
-        <div class="container-fluid border w-100 p-0 m-0">
+    <div id="wrapper">
+        <div class="container-fluid border w-100 p-0 m-0 mb-3">
 
 
             <!--Header-->
@@ -24,45 +24,56 @@
                     <h1 class="text-center w-100 m-0 p-0">Giph Mania!</h1>
                 </div>
             </div>
+        </div>
 
-
-            <!--Buttons and Input Section-->
+        <!--Buttons and Input Section-->
+        <div class="container">
             <div class="row">
 
                 <!--Buttons-->
                 <div class="col-8">
-                    <div class="text-center border">Buttons</div>
+                    <h4 class="text-center border">Buttons</h4>
+                    <div id="buttons-area"></div>
                 </div>
 
                 <!--Inputs-->
-                <div class="col-4">
-                    <div class="text-center border">Inputs</div>
+                <div class="col-4 border">
+                    <h4 class="text-center">Inputs</h4>
+                    <div class="form-group input-group-sm mb-3">
+                        <div class="input-group">
+                            <label id="inputGroup-sizing-sm">Add New Category</label>
+                        </div>
+                        <input id="input-line" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="">
+                        <button id="new-category-button" type="button" class="btn btn-primary">New Category</button>
+                    </div>
                 </div>
             </div>
 
             <!--Giphs and Favorites Section-->
             <div class="row">
 
-                    <!--Giphs-->
-                    <div class="col-8">
-                        <div class="text-center border">Giphs</div>
-                    </div>
-    
-                    <!--Favorites-->
-                    <div class="col-4">
-                        <div class="text-center border">Favorites</div>
-                    </div>
+                <!--Giphs-->
+                <div class="col-8">
+                    <h4 class="text-center border">Giphs</h4>
+                    <div id="giph-box"></div>
                 </div>
+
+                <!--Favorites-->
+                <div class="col-4">
+                    <h4 class="text-center border">Favorites</h4>
+                </div>
+            </div>
 
         </div>
     </div>
     <!--Footer-->
     <footer class="footer">
         <div class="container-fluid w-100 m-0 p-0">
-            
-                <div class="text-center w-100 m-0 pt-3">Joseph Von Edwins 2018</div>
-        
+
+            <div class="text-center w-100 m-0 pt-3">Joseph Von Edwins 2018</div>
+
         </div>
+   
     </footer>
 
 
