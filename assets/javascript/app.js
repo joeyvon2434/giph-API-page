@@ -11,8 +11,8 @@ var APIkey = 'tpOBhMb9bMKdBzmRRjzV11nmEBK126qW';
 $(document).ready(function () {
     createButtons();
 
-    //Clicked functions section
-    //========================
+//Clicked functions section
+//========================
 
     //Function to add a button
     $("#new-category-button").on('click', function () {
@@ -42,11 +42,20 @@ $(document).ready(function () {
 
 
     //Function to Start/Stop GIFs
+    $(document).on('click', '.gif', function() {
+
+        if ($(this).attr('data-state') == 'still') {
+            $(this).attr('src', $(this).attr('data-animate'));
+            $(this).attr('data-state', 'animate');
+        } else {
+            $(this).attr('src', $(this).attr('data-still'));
+            $(this).attr('data-state', 'still');
+        };
+    });
 
 
-
-    //Called functions section
-    //========================
+//Called functions section
+//========================
 
     //Function to create buttons
     function createButtons() {
@@ -89,8 +98,6 @@ $(document).ready(function () {
         newGIPHbox.append(newGIPHrating);
        $('#giph-box').prepend(newGIPHbox);
     };
-
-
 }; //Close loop that creates the correct number of GIFs from dataArray 
 
 
