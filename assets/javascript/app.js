@@ -127,7 +127,7 @@ $(document).ready(function () {
             newGIPHrating.text('Rating: ' + dataArray[i].rating);
 
             //Create a favorite button
-            var favoriteButton = $('<button class="favorite-button btn-sm btn-outline-dark">');
+            var favoriteButton = $('<button class="favorite-button btn-sm btn-secondary">');
             favoriteButton.attr('data-animate', dataArray[i].images.fixed_height.url);
             favoriteButton.attr('data-still', dataArray[i].images.fixed_height_still.url);
             favoriteButton.text('Add to Favorites');
