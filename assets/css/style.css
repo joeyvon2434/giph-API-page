@@ -1,6 +1,11 @@
+h1 {
+    font-family: 'Permanent Marker', Arial, sans-serif;
+}
+
 body {
     margin-bottom: 0px;
     background: #D79922;
+    font-family: 'Indie Flower', Arial, sans-serif;
 }
 
 #wrapper {

@@ -56,7 +56,7 @@ $(document).ready(function () {
     //Function to add gif to favorites
     $(document).on('click', '.favorite-button', function () {
         //create new image in favorites
-        var newGIPH = $("<img class='mb-1 favorite-gif'>");
+        var newGIPH = $("<img class='mb-1 favorite-gif shadow'>");
         var newSrc = $(this).attr('data-still');
         newGIPH.attr('src', newSrc);
         var newAnimate = $(this).attr('data-animate');
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
         //create remove button in favorites
         var newButton = $("<button>");
-        newButton.addClass('btn btn-sm btn-dark remove-button');
+        newButton.addClass('btn btn-sm btn-dark remove-button shadow');
         newButton.text('Remove Favorite');
 
 
@@ -95,7 +95,7 @@ $(document).ready(function () {
     function createButtons() {
         $('#buttons-area').empty();
         for (i = 0; i < topicArray.length; i++) {
-            var newButton = $('<button class="btn btn-secondary topicButton m-1">');
+            var newButton = $('<button class="btn btn-secondary topicButton m-1 shadow">');
             newButton.attr('value', topicArray[i]);
             newButton.text(topicArray[i]);
             $('#buttons-area').append(newButton);
@@ -115,7 +115,7 @@ $(document).ready(function () {
         for (i = 0; i < dataArray.length; i++) {
 
             //Create Image for new GIF
-            var newGIPH = $('<img class="mb-1">');
+            var newGIPH = $('<img class="mb-1 shadow">');
             newGIPH.attr('src', dataArray[i].images.fixed_height_still.url);
             newGIPH.attr('data-animate', dataArray[i].images.fixed_height.url);
             newGIPH.attr('data-still', dataArray[i].images.fixed_height_still.url);
@@ -127,7 +127,7 @@ $(document).ready(function () {
             newGIPHrating.text('Rating: ' + dataArray[i].rating);
 
             //Create a favorite button
-            var favoriteButton = $('<button class="favorite-button btn-sm btn-secondary">');
+            var favoriteButton = $('<button class="favorite-button btn-sm btn-secondary shadow">');
             favoriteButton.attr('data-animate', dataArray[i].images.fixed_height.url);
             favoriteButton.attr('data-still', dataArray[i].images.fixed_height_still.url);
             favoriteButton.text('Add to Favorites');
