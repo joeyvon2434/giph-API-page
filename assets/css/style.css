@@ -28,7 +28,8 @@ footer {
 }
 
 .gif-area {
-    background: #C5CBE3;
+    background: rgb(164, 176, 224);
+    min-height: 50vh;
 }
 
 .div-GIPH-box {
@@ -71,6 +72,7 @@ footer {
 
 .favorite-area {
     background: #F13C20;
+    min-height: 50vh;
 }
 
 .remove-button {
