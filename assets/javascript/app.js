@@ -30,7 +30,7 @@ $(document).ready(function () {
     $(document).on('click', '.topicButton', function () {
         var giphTopic = $(this).val();
         giphTopic = giphTopic.replace(" ", "+");
-        var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + giphTopic + '&api_key=tpOBhMb9bMKdBzmRRjzV11nmEBK126qW&limit=10'
+        var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + giphTopic + '&api_key=tpOBhMb9bMKdBzmRRjzV11nmEBK126qW&limit=10'
         
 
         //AJAX call to GIPHY API
